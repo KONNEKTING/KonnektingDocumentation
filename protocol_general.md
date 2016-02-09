@@ -2,7 +2,7 @@
 
 The programming protocol uses group telegrams with the mostly unused group address 15/7/255. Those telegrams use DPT 60000, which is ureserved for manufacturer specific extensions. The used Property Data Type is PDT_GENERIC_14, which is 14 bytes of raw data. 
 
-!!! It's required that no other device is using this address. Otherwise it may conflict with KONNEKTING Devices!
+**!!! It's required that no other device is using this address. Otherwise it may conflict with KONNEKTING Devices !!!**
 
 ## Telegram overview
 
