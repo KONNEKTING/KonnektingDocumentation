@@ -2,6 +2,10 @@
 
 This is the first protocol version.
 
+## Contents
+- [Acknowledge](#acknowledge)
+- [ReadDeviceInfo](#readdeviceinfo)
+
 ### Acknowledge
 
 **Message Name:** Acknowledge  
