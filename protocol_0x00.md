@@ -7,23 +7,23 @@ This is the first protocol version.
 - [0x01 ReadDeviceInfo](#readdeviceinfo)
 - [0x02 AnswerDeviceInfo](#answerdeviceinfo)
 - [0x03 Restart](#restart)
-- --
+- ...
 - [0x0A WriteProgrammingMode](#writeprogrammingmode)
 - [0x0B ReadProgrammingMode](#readprogrammingmode)
 - [0x0C AnswerProgrammingMode](#answerprogrammingmode)
-- --
+- ...
 - [0x14 WriteIndividualAddress](#writeindividualaddress)
 - [0x15 ReadIndividualAddress](#readindividualaddress)
 - [0x16 AnswerIndividualAddress](#answerindividualaddress)
-- --
+- ...
 - [0x1E WriteParameter](#writeparameter)
 - [0x1F ReadParameter](#readparameter)
 - [0x20 AnswerParameter](#answerparameter)
-- --
+- ...
 - [0x28 WriteCommObject](#writecommobject)
 - [0x29 ReadCommObject](#readcommobject)
 - [0x2A AnswerCommObject](#answercommobject)
-- --
+- ...
 
   
   
