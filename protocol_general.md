@@ -31,6 +31,9 @@ The programming protocol uses group telegrams with the mostly unused group addre
     </tr>
 </table>
 
+There are several message types for all kind of purposes. As we have one byte for the Message-Type-ID, we have up to 256 possible messages. That should be enough for our purposes.
+Same for version: Up to 256 versions should be enough for the *near* future.
+
 **Glossary**	
 
 * **HI**	high byte, left most byte												
@@ -39,5 +42,7 @@ The programming protocol uses group telegrams with the mostly unused group addre
 * **individual address**	aka. physical address, 1.2.3												
 
 ## Protocol Versions
+
+Here is a list of currently developed and supported protocol versions (right now, we have just one...)
 
 - [Version 0x00](protocol_0x00.md)
