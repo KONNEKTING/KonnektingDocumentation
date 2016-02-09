@@ -6,7 +6,7 @@ This is the first protocol version.
 - [0x00 Acknowledge](#acknowledge)
 - [0x01 ReadDeviceInfo](#readdeviceinfo)
 - [0x02 AnswerDeviceInfo](#answerdeviceinfo)
-- [0x03 Restart](#restart)
+- [0x09 Restart](#restart)
 - ...
 - [0x0A WriteProgrammingMode](#writeprogrammingmode)
 - [0x0B ReadProgrammingMode](#readprogrammingmode)
@@ -425,9 +425,3 @@ then byte 3 to 8 contains two tupels. Rest is filled with 0x00."
     <tr><td>12</td><td align="center" rowspan="2">0x00, unused</td></tr>
     <tr><td>13</td></tr>
 </table>
-
-
-
----
-
-!!! It's required that no other device is using this address. Otherwise it may conflict with KONNEKTING Devices!
