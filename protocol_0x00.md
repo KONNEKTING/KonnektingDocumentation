@@ -255,6 +255,80 @@ There are several message types for all kind of purposes. As we have one byte fo
     <tr><td>13</td></tr>
 </table>
 
+
+### WriteParameter
+
+**Message Name:** WriteParameter  
+**MsgID:** 30 dec / 0x1E hex  
+**Description:** Writes a value for a specific parameter. Device will respond with a "Acknowledge" message.  			  
+**Requires Programming Mode:** yes
+
+<table>
+    <tr><th>Byte no#</th><th>Description</th></tr>
+    <tr><td>2</td><td>Parameter ID</td></tr>
+    <tr><td>3</td><td align="center" rowspan="11">0x00, unused</td></tr>
+    <tr><td>4</td></tr>
+    <tr><td>5</td></tr>
+    <tr><td>6</td></tr>
+    <tr><td>7</td></tr>
+    <tr><td>8</td></tr>
+    <tr><td>9</td></tr>
+    <tr><td>10</td></tr>
+    <tr><td>11</td></tr>
+    <tr><td>12</td></tr>
+    <tr><td>13</td></tr>
+</table>
+
+
+### ReadParameter
+
+**Message Name:** ReadParameter  
+**MsgID:** 31 dec / 0x1F hex  
+**Description:** Reads a value for a specific parameter  
+**Requires Programming Mode:** yes
+
+<table>
+    <tr><th>Byte no#</th><th>Description</th></tr>
+    <tr><td>2</td><td>Parameter ID</td></tr>
+    <tr><td>3</td><td align="center" rowspan="11">0x00, unused</td></tr>
+    <tr><td>4</td></tr>
+    <tr><td>5</td></tr>
+    <tr><td>6</td></tr>
+    <tr><td>7</td></tr>
+    <tr><td>8</td></tr>
+    <tr><td>9</td></tr>
+    <tr><td>10</td></tr>
+    <tr><td>11</td></tr>
+    <tr><td>12</td></tr>
+    <tr><td>13</td></tr>
+</table>
+
+### AnswerParameter
+
+**Message Name:** AnswerParameter  
+**MsgID:** 32 dec / 0x20 hex  
+**Description:** Answers a ReadDeviceInfo message with the device's individual address.  
+**Requires Programming Mode:** no
+
+
+<table>
+    <tr><th>Byte no#</th><th>Description</th></tr>
+    <tr><td>2</td><td>Parameter ID</td></tr>
+    <tr><td>3</td><td align="center" rowspan="11">parameter value<br/>up to 11 bytes, depends on the parameter</td></tr>
+    <tr><td>4</td></tr>
+    <tr><td>5</td></tr>
+    <tr><td>6</td></tr>
+    <tr><td>7</td></tr>
+    <tr><td>8</td></tr>
+    <tr><td>9</td></tr>
+    <tr><td>10</td></tr>
+    <tr><td>11</td></tr>
+    <tr><td>12</td></tr>
+    <tr><td>13</td></tr>
+</table>
+
+
+
 ---
 
 !!! It's required that no other device is using this address. Otherwise it may conflict with KONNEKTING Devices!
