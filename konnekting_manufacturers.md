@@ -18,6 +18,9 @@ We don't force you to register. As long as you build devices just for you, you c
 2. How many devices can be created with one manufacturer id?  
 You can create up to 256 devices which can have 256 revisions. So in sum 65536 devices are possible with just one manufacturer ID. Choosing device ID and revision is up to you.
 
+3. Can I have ID 12345 (insert any ID here)?  
+In principle yes, but we try to fill the gaps from the beginning of the list. 
+
 # List
 
 <table>
