@@ -5,11 +5,20 @@ You can register your ID for free. Please drop us a email with your
 * Manufacturer Name
 * a short description
 * and a contact information, like a valid email or mail address
-: 
 
-[register@konnekting.de](mailto:register@konnekting.de?Subject=KONNEKTING:%20Register%20Manufacturer-ID&body=Dear%20KONNEKTING%20Team,%0A%0APlease%20register%20me%20a%20manufacturer-ID:%0A%0AManufacturer%20Name:%20{Your%20manufacturer%20name}%0ADescription:%20{a%20short%20description}%0AContact:%20{contact%20information,%20like%20email%20or%20mail address}%0A%0AWith%20kind%20regards,%0A%20%20{Your%20Name})
+--&gt; [register@konnekting.de](mailto:register@konnekting.de?Subject=KONNEKTING:%20Register%20Manufacturer-ID&body=Dear%20KONNEKTING%20Team,%0A%0APlease%20register%20me%20a%20manufacturer-ID:%0A%0AManufacturer%20Name:%20{Your%20manufacturer%20name}%0ADescription:%20{a%20short%20description}%0AContact:%20{contact%20information,%20like%20email%20or%20mail address}%0A%0AWith%20kind%20regards,%0A%20%20{Your%20Name})
 
 The Device ID and Revision, which is also required for a working KONNEKTING Device is completely up to you. You have to ensure by yourself that you do not create duplicates and conflicts.
+
+# FAQ
+
+1. Why do I have to register?  
+We don't force you to register. As long as you build devices just for you, you can do whatever you want. But we would like to see you share your device with the world. So others would use your Sketch/Firmware as well, which may then conflict with an existing ID...
+
+2. How many devices can be created with one manufacturer id?  
+You can create up to 256 devices which can have 256 revisions. So in sum 65536 devices are possible with just one manufacturer ID. Choosing device ID and revision is up to you.
+
+# List
 
 <table>
   <tr>
