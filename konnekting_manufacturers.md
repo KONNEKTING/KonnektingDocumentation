@@ -21,10 +21,10 @@ The Device ID and Revision, which is also required for a working KONNEKTING Devi
     <th>Date</th>
   </tr>
   
-  <!-- ### 0 ### --->
+  <!-- ### 0..255 ### --->
   <tr>
-    <td>0</td>
-    <td>0000</td>
+    <td>0..255</td>
+    <td>0000..00FF</td>
     <td>KONNEKTING</td>
     <td>The people behind the scenes</td>
     <td>info@konnekting.de</td>
@@ -40,5 +40,15 @@ The Device ID and Revision, which is also required for a working KONNEKTING Devi
     <td>info@konnekting.de</td>
     <td>01.01.2016</td>
   </tr>
+  
+  <!-- ### 7070 ### --->
+  <tr>
+    <td>7070</td>
+    <td>1B9E</td>
+    <td>Eugenius Adminius</td>
+    <td></td>
+    <td>eigenius707[a]gmail.com</td>
+    <td>12.02.2016</td>
+  </tr>  
   
 </table>
