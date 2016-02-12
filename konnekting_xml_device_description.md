@@ -23,13 +23,15 @@ If you haven't registered a manufacturer-id yet, NOW would be the best time for 
         This MUST match the definition in your Arduino Sketch.
         Otherwise programming fails.
         
-        Manufacturer ID = Your individual vendor ID. 
-        Device ID = An ID for your device. 
-        Revision = typically "001". 
+        The IDs need to be provided as unsigned integer values.
+        
+        Manufacturer ID = Your individual vendor ID (uint16)
+        Device ID = An ID for your device (uint8) 
+        Revision = typically "1" (uint8)
                     You might use 
-                        000 for developing-phase, 
-                        001 for first release and 
-                        002...255 of every change which breaks compatibility.
+                        0 for developing-phase, 
+                        1 for first release and 
+                        2...255 of every change which breaks compatibility.
     -->
     <Device ManufacturerId="12345" DeviceId="123" Revision="123">
 
