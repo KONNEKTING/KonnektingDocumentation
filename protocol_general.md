@@ -39,7 +39,7 @@ Same for version: Up to 256 versions should be enough for the *near* future.
 **Glossary**	
 
 * **HI**	high byte, left most byte												
-* **LO**	low byte, rigt most byte												
+* **LO**	low byte, right most byte												
 * **GA**	group address, 1/2/3												
 * **individual address**	aka. physical address, 1.2.3												
 
