@@ -8,7 +8,7 @@ https://github.com/KONNEKTING/KonnektingXmlSchema/blob/master/src/main/xsd/Konne
 
 # Preparation
 
-If you haven't registered a manufacturer-id yet, NOW would be the best time for it. **TODO: ADD LINK HERE**
+If you haven't registered a manufacturer-id yet, NOW would be the best time for it. [REGISTER FOR FREE](konnekting_manufacturers.md)
 
 # XML Format explained
 
