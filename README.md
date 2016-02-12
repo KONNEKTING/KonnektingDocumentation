@@ -2,7 +2,7 @@
 
 # Introduction
 
-In januaray 2014, there was a discussion about developing a do-it-yourself KNX device with help of Arduino and an Siemens buscoppler on the german [KNX User Forum](http://knx-user-forum.de/forum/%C3%B6ffentlicher-bereich/knx-eib-forum/diy-do-it-yourself/33016-arduino-am-knx).
+In january 2014, there was a discussion about developing a do-it-yourself KNX device with help of Arduino and an Siemens buscoppler on the german [KNX User Forum](http://knx-user-forum.de/forum/%C3%B6ffentlicher-bereich/knx-eib-forum/diy-do-it-yourself/33016-arduino-am-knx).
 
 People where happy and started to develop own stuff. Months later, the idea to have a "over the bus programmable" DIY device rised. Early attempts in extening the [DKA TpUart](https://bitbucket.org/dka/arduino-tpuart) library with "property read/write, memory read/write) failed with strange timing issues. 
 Again a fews weeks later, a few guys put their heads together to create a new attempt. And **this** is the documentation about this attempt.
@@ -37,8 +37,10 @@ An XML file defines what your kdevice can do (and what not). So each devices typ
 With help of this XML file you can add new devices, give them an individual address, associate group addresses with the communication objectsm, setup parameters and finally push the complete configuration via KNX bus to the device with just one click (and one initial button press on the device).
 
 
-----
+## Contents
 
-
-- [Protocol](protocol_general.md)
+- [KONNEKTING Device Library](konnekting_device_library.md)
+- [KONNEKTING XML based device description](konnekting_xml_device_description.md)
+- [KONNEKTING Suite](konnekting_suite.md)
+- [Telegram-based programming protocol](protocol_general.md)
 - [Programming Workflow](programming_workflow.md)
