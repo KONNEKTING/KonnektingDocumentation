@@ -40,6 +40,7 @@ KnxComObject KnxDevice::_comObjectsList[] = {
 const byte KnxDevice::_numberOfComObjects = sizeof (_comObjectsList) / sizeof (KnxComObject); // do no change this code
 
 // Definition of parameter size / type ...
+// Ensure that this matches your parameter configuration in your device XML
 byte KnxTools::_paramSizeList[] = {
 
     /* Param Index 0 */ PARAM_UINT8,
