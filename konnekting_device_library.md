@@ -111,7 +111,7 @@ ___
 ___
 **`void init(HardwareSerial& serial, int progButtonPin, int progLedPin, word manufacturerID, byte deviceID, byte revisionID);`**
 * **Description:**  Start the KNX Device. Place this function call in the setup() function of your Arduino sketch
-* **Parameters :** serial = serial port that is connected to the KNX TPUART Transceiver, progButtonPin = arduino pin which is connected to the prog button, progLedPin = arduino pin which is connected to the programming LED, manufacturerID = your manufacturer ID, deviceID = ID identifying your device, revision = revision of your firmware (increment if new version is no longer backwards-compatible)
+* **Parameters :** serial = serial port that is connected to the KNX TPUART Transceiver, progButtonPin = arduino pin which is connected to the prog button, progLedPin = arduino pin which is connected to the programming LED, [manufacturerID = your manufacturer ID](konnekting_manufacturers.md), deviceID = ID identifying your device, revision = revision of your firmware (increment if new version is no longer backwards-compatible)
 
 * **Example:** 
 ```
