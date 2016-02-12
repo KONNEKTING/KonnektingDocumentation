@@ -1,0 +1,1 @@
+# KONNEKTING XML Device Description
