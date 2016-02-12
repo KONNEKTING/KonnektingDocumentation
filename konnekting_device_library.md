@@ -1,5 +1,7 @@
 # KONNEKTING Device Library
 
+The device library enables the Arduino to connect to the KNX bus. 
+
 # Example Sketch Explained
 
 ```C++
