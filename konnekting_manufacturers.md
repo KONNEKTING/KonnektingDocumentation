@@ -42,6 +42,26 @@ In principle yes, but we try to fill the gaps from the beginning of the list.
     <td>info@konnekting.de</td>
     <td>01.01.2016</td>
   </tr>
+
+  <!-- ### 42 ### --->
+  <tr>
+    <td>42</td>
+    <td>002A</td>
+    <td>Alex C.</td>
+    <td></td>
+    <td>knx[a]root1.de</td>
+    <td>15.02.2016</td>
+  </tr>
+  
+<!-- ### 66 ### --->
+  <tr>
+    <td>66</td>
+    <td>0042</td>
+    <td>Alex C.</td>
+    <td></td>
+    <td>knx[a]root1.de</td>
+    <td>15.02.2016</td>
+  </tr>     
   
   <!-- ### 43981 ### --->
   <tr>
