@@ -63,6 +63,16 @@ In principle yes, but we try to fill the gaps from the beginning of the list.
     <td>15.02.2016</td>
   </tr>     
   
+  <!-- ### 7070 ### --->
+  <tr>
+    <td>7070</td>
+    <td>1B9E</td>
+    <td>Eugenius Adminius</td>
+    <td></td>
+    <td>eugenius707[a]gmail.com</td>
+    <td>12.02.2016</td>
+  </tr>    
+  
   <!-- ### 43981 ### --->
   <tr>
     <td>43981</td>
@@ -82,16 +92,6 @@ In principle yes, but we try to fill the gaps from the beginning of the list.
     <td>info@konnekting.de</td>
     <td>01.01.2016</td>
   </tr>
-  
-  <!-- ### 07070 ### --->
-  <tr>
-    <td>7070</td>
-    <td>1B9E</td>
-    <td>Eugenius Adminius</td>
-    <td></td>
-    <td>eugenius707[a]gmail.com</td>
-    <td>12.02.2016</td>
-  </tr>  
   
 </table>
 
