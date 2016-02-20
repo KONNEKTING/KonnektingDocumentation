@@ -166,7 +166,7 @@ If you haven't registered a manufacturer-id yet, NOW would be the best time for 
                 <!-- You should provide a reasinaly name -->
                 <Name>My First Com Object</Name>
                 <!-- and a description of the functiono of this comm object-->
-                <Function>Test-Funtion #1</Function>
+                <Function>Test-Function #1</Function>
                 <!-- 
                     Here you should provide the Datapoint Type for this CommObject
                     Format:
@@ -179,7 +179,7 @@ If you haven't registered a manufacturer-id yet, NOW would be the best time for 
             
             <CommObject Id="1">
                 <Name>My Second Com Object</Name>
-                <Function>Test-Funtion #2</Function>
+                <Function>Test-Function #2</Function>
                 <DataPointType>2</DataPointType>
             </CommObject>
         </CommObjects>
