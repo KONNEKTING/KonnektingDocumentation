@@ -45,7 +45,7 @@ In principle yes, but we try to fill the gaps from the beginning of the list.
 
   <!-- ### 42 ### --->
   <tr>
-    <td>42</td>
+    <td>[42](https://en.wikipedia.org/wiki/Phrases_from_The_Hitchhiker%27s_Guide_to_the_Galaxy#Answer_to_the_Ultimate_Question_of_Life.2C_the_Universe.2C_and_Everything_.2842.29)</td>
     <td>002A</td>
     <td>Alex C.</td>
     <td></td>
@@ -56,7 +56,7 @@ In principle yes, but we try to fill the gaps from the beginning of the list.
 <!-- ### 66 ### --->
   <tr>
     <td>66</td>
-    <td>0042</td>
+    <td>00[42](https://en.wikipedia.org/wiki/Phrases_from_The_Hitchhiker%27s_Guide_to_the_Galaxy#Answer_to_the_Ultimate_Question_of_Life.2C_the_Universe.2C_and_Everything_.2842.29)</td>
     <td>Alex C.</td>
     <td></td>
     <td>knx[a]root1.de</td>
