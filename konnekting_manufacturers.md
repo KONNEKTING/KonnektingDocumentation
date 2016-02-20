@@ -85,7 +85,7 @@ In principle yes, but we try to fill the gaps from the beginning of the list.
   
   <!-- ### 07070 ### --->
   <tr>
-    <td>07070</td>
+    <td>7070</td>
     <td>1B9E</td>
     <td>Eugenius Adminius</td>
     <td></td>
