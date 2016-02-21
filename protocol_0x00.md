@@ -366,7 +366,7 @@ Flag masks: <br/>0x80: Factory-Flag: 1 = factory settings, 0 = EEPROM settings<b
     <tr><td>3</td><td>GA HI</td></tr>
     <tr><td>4</td><td>GA LO</td></tr>
     <tr><td>5</td><td>Settings</td></tr>
-    <tr><td>6</td>td align="center" rowspan="8">0x00, unused</td></tr>
+    <tr><td>6</td><td align="center" rowspan="8">0x00, unused</td></tr>
     <tr><td>7</td><td></td></tr>
     <tr><td>8</td><td></td></tr>
     <tr><td>9</td><td></td></tr>
