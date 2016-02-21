@@ -362,17 +362,17 @@ Flag masks: <br/>0x80: Factory-Flag: 1 = factory settings, 0 = EEPROM settings<b
 
 <table>
     <tr><th>Byte no#</th><th>Description</th></tr>
-    <tr><td>2</td><td>Parameter ID</td></tr>
-    <tr><td>3</td><td align="center" rowspan="11">0x00, unused</td></tr>
-    <tr><td>4</td></tr>
-    <tr><td>5</td></tr>
-    <tr><td>6</td></tr>
-    <tr><td>7</td></tr>
-    <tr><td>8</td></tr>
-    <tr><td>9</td></tr>
-    <tr><td>10</td></tr>
-    <tr><td>11</td></tr>
-    <tr><td>12</td></tr>
+    <tr><td>2</td><td>Number of CommObjects to write,<br/>range [1..3]</td></tr>    
+    <tr><td>3</td><td>#1 CommObject ID</td></tr>
+    <tr><td>4</td><td>#1 GA HI</td></tr>
+    <tr><td>5</td><td>#1 GA LO</td></tr>
+    <tr><td>6</td><td>#2 CommObject ID</td></tr>
+    <tr><td>7</td><td>#2 GA HI</td></tr>
+    <tr><td>8</td><td>#2 GA LO</td></tr>
+    <tr><td>9</td><td>#3 CommObject ID</td></tr>
+    <tr><td>10</td><td>#3 GA HI</td></tr>
+    <tr><td>11</td><td>#3 GA LO</td></tr>
+    <tr><td>12</td><td align="center" rowspan="2">0x00, unused</td></tr>
     <tr><td>13</td></tr>
 </table>
 
