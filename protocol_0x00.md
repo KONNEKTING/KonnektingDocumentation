@@ -416,7 +416,7 @@ then byte 3 to 8 contains two tupels. Rest is filled with 0x00."
     <tr><td>3</td><td>GA HI</td></tr>
     <tr><td>4</td><td>GA LO</td></tr>
     <tr><td>5</td><td>Settings</td></tr>
-    <tr><td>6</td>td align="center" rowspan="8">0x00, unused</td></tr>
+    <tr><td>6</td><td align="center" rowspan="8">0x00, unused</td></tr>
     <tr><td>7</td></tr>
     <tr><td>8</td></tr>
     <tr><td>9</td></tr>
