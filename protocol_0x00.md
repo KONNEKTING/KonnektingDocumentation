@@ -362,18 +362,18 @@ Flag masks: <br/>0x80: Factory-Flag: 1 = factory settings, 0 = EEPROM settings<b
 
 <table>
     <tr><th>Byte no#</th><th>Description</th></tr>
-    <tr><td>2</td><td>Number of CommObjects to write,<br/>range [1..3]</td></tr>    
-    <tr><td>3</td><td>#1 CommObject ID</td></tr>
-    <tr><td>4</td><td>#1 GA HI</td></tr>
-    <tr><td>5</td><td>#1 GA LO</td></tr>
-    <tr><td>6</td><td>#2 CommObject ID</td></tr>
-    <tr><td>7</td><td>#2 GA HI</td></tr>
-    <tr><td>8</td><td>#2 GA LO</td></tr>
-    <tr><td>9</td><td>#3 CommObject ID</td></tr>
-    <tr><td>10</td><td>#3 GA HI</td></tr>
-    <tr><td>11</td><td>#3 GA LO</td></tr>
-    <tr><td>12</td><td align="center" rowspan="2">0x00, unused</td></tr>
-    <tr><td>13</td></tr>
+    <tr><td>2</td><td>CommObject ID</td></tr>    
+    <tr><td>3</td><td>GA HI</td></tr>
+    <tr><td>4</td><td>GA LO</td></tr>
+    <tr><td>5</td><td>Settings</td></tr>
+    <tr><td>6</td>td align="center" rowspan="8">0x00, unused</td></tr>
+    <tr><td>7</td><td></td></tr>
+    <tr><td>8</td><td></td></tr>
+    <tr><td>9</td><td></td></tr>
+    <tr><td>10</td><td></td></tr>
+    <tr><td>11</td><td></td></tr>
+    <tr><td>12</td><td></td></tr>
+    <tr><td>13</td><td></td></tr>
 </table>
 
 
@@ -386,11 +386,11 @@ Flag masks: <br/>0x80: Factory-Flag: 1 = factory settings, 0 = EEPROM settings<b
 
 <table>
     <tr><th>Byte no#</th><th>Description</th></tr>
-    <tr><td>2</td><td>Number of CommObjects to read,<br/>range [1..3]</td></tr>
-    <tr><td>3</td><td>ComObjectID #1</td></tr>
-    <tr><td>4</td><td>ComObjectID #2</td></tr>
-    <tr><td>5</td><td>ComObjectID #3</td></tr>
-    <tr><td>6</td><td align="center" rowspan="8">0x00, unused</td>
+    <tr><td>2</td><td>ComObjectID</td></tr>
+    <tr><td>3</td><td align="center" rowspan="11">0x00, unused</td></tr>
+    <tr><td>4</td></tr>
+    <tr><td>5</td></tr>
+    <tr><td>6</td></tr>
     <tr><td>7</td></tr>
     <tr><td>8</td></tr>
     <tr><td>9</td></tr>
@@ -412,16 +412,16 @@ then byte 3 to 8 contains two tupels. Rest is filled with 0x00."
 
 <table>
     <tr><th>Byte no#</th><th>Description</th></tr>
-    <tr><td>2</td><td>Number of tupels,<br/> range [1..3]</td></tr>
-    <tr><td>3</td><td>#1 CommObject ID</td></tr>
-    <tr><td>4</td><td>#1 GA HI</td></tr>
-    <tr><td>5</td><td>#1 GA LO</td></tr>
-    <tr><td>6</td><td>#2 CommObject ID</td></tr>
-    <tr><td>7</td><td>#2 GA HI</td></tr>
-    <tr><td>8</td><td>#2 GA LO</td></tr>
-    <tr><td>9</td><td>#3 CommObject ID</td></tr>
-    <tr><td>10</td><td>#3 GA HI</td></tr>
-    <tr><td>11</td><td>#3 GA LO</td></tr>
-    <tr><td>12</td><td align="center" rowspan="2">0x00, unused</td></tr>
-    <tr><td>13</td></tr>
+    <tr><td>2</td><td>CommObject ID</td></tr>    
+    <tr><td>3</td><td>GA HI</td></tr>
+    <tr><td>4</td><td>GA LO</td></tr>
+    <tr><td>5</td><td>Settings</td></tr>
+    <tr><td>6</td>td align="center" rowspan="8">0x00, unused</td></tr>
+    <tr><td>7</td><td></td></tr>
+    <tr><td>8</td><td></td></tr>
+    <tr><td>9</td><td></td></tr>
+    <tr><td>10</td><td></td></tr>
+    <tr><td>11</td><td></td></tr>
+    <tr><td>12</td><td></td></tr>
+    <tr><td>13</td><td></td></tr>
 </table>
