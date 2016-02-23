@@ -6,7 +6,7 @@ You can register your ID for free. Please drop us a email with your
 * a short description
 * and a contact information, like a valid email or mail address
 
---&gt; [register@konnekting.de](mailto:register@konnekting.de?Subject=KONNEKTING:%20Register%20Manufacturer-ID&body=Dear%20KONNEKTING%20Team,%0A%0APlease%20register%20me%20a%20manufacturer-ID:%0A%0AManufacturer%20Name:%20{Your%20manufacturer%20name}%0ADescription:%20{a%20short%20description}%0AContact:%20{contact%20information,%20like%20email%20or%20mail address}%0A%0AWith%20kind%20regards,%0A%20%20{Your%20Name})
+--&gt; [register@konnekting.de](mailto:register@konnekting.de?Subject=KONNEKTING:%20Register%20Manufacturer-ID&body=Dear%20KONNEKTING%20Team,%0A%0APlease%20register%20me%20a%20manufacturer%20ID:%0A%0AManufacturer%20Name:%20Your%20manufacturer%20name%0ADescription:%20a%20short%20description%0AContact:%20contact%20information,%20like%20email%20or%20mail address%0A%0AWith%20kind%20regards,%0A%20%20Your%20Name)
 
 The Device ID and Revision, which is also required for a working KONNEKTING Device is completely up to you. You have to ensure by yourself that you do not create duplicates and conflicts.
 
