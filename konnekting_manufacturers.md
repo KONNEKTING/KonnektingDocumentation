@@ -38,7 +38,7 @@ In principle yes, but we try to fill the gaps from the beginning of the list.
     <td>0..255</td>
     <td>0000..00FF</td>
     <td>KONNEKTING</td>
-    <td>The people behind the scenes</td>
+    <td>system reserved</td>
     <td>info@konnekting.de</td>
     <td>01.01.2016</td>
   </tr>
