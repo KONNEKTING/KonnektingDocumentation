@@ -53,16 +53,6 @@ In principle yes, but we try to fill the gaps from the beginning of the list.
     <td>15.02.2016</td>
   </tr>
   
-<!-- ### 66 ### --->
-  <tr>
-    <td>66</td>
-    <td>0042</td>
-    <td>Alex C.</td>
-    <td></td>
-    <td>knx[a]root1.de</td>
-    <td>15.02.2016</td>
-  </tr>     
-  
   <!-- ### 7070 ### --->
   <tr>
     <td>7070</td>
