@@ -43,14 +43,14 @@ In principle yes, but we try to fill the gaps from the beginning of the list.
     <td>01.01.2016</td>
   </tr>
 
-  <!-- ### 42 ### --->
+  <!-- ### 256 ### --->
   <tr>
-    <td>42</td>
-    <td>002A</td>
-    <td>Alex C.</td>
-    <td></td>
-    <td>knx[a]root1.de</td>
-    <td>15.02.2016</td>
+    <td>256</td>
+    <td>0100</td>
+    <td>Mag Gyver</td>
+    <td>KNX User Forum</td>
+    <td>foxfox@versanet.de</td>
+    <td>01.01.2016</td>
   </tr>
   
   <!-- ### 7070 ### --->
@@ -58,7 +58,7 @@ In principle yes, but we try to fill the gaps from the beginning of the list.
     <td>7070</td>
     <td>1B9E</td>
     <td>Eugenius Adminius</td>
-    <td></td>
+    <td>KONNEKTING</td>
     <td>eugenius707[a]gmail.com</td>
     <td>12.02.2016</td>
   </tr>    
@@ -68,10 +68,20 @@ In principle yes, but we try to fill the gaps from the beginning of the list.
     <td>43981</td>
     <td>ABCD</td>
     <td>Matthias F.</td>
-    <td></td>
+    <td>KONNEKTING</td>
     <td>KNX.Matthias[a]gmx.de</td>
     <td>15.02.2016</td>
   </tr>  
+
+  <!-- ### 49374 ### --->
+  <tr>
+    <td>49374</td>
+    <td>C0DE</td>
+    <td>Alex C.</td>
+    <td>KONNEKTING</td>
+    <td>knx[a]root1.de</td>
+    <td>15.02.2016</td>
+  </tr>
   
   <!-- ### 57005 ### --->
   <tr>
