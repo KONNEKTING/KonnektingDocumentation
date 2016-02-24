@@ -49,7 +49,7 @@ In principle yes, but we try to fill the gaps from the beginning of the list.
     <td>0100</td>
     <td>Mag Gyver</td>
     <td>KNX User Forum</td>
-    <td>foxfox@versanet.de</td>
+    <td>foxfox[a]versanet.de</td>
     <td>01.01.2016</td>
   </tr>
   
