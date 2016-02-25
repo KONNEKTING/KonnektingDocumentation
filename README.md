@@ -11,7 +11,7 @@ It's a complete open source project with an library for Arduino boards that allo
 
 But first of all, this child needs a name:
 
-***KONNEKTING***
+![KONNEKTING Logo](https://avatars1.githubusercontent.com/u/16254058?v=3&s=200 "KONNEKTING Logo")
 
 The name is a wordplay with "connect”, “connecting” and “Ing”, the german abbreviation for "engineer". If you combine them, you will get “KONNEKTING”.
 
