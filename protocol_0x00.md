@@ -261,7 +261,7 @@ Flag masks: <br/>0x80: Factory-Flag: 1 = factory settings, 0 = EEPROM settings<b
 
 **Message Name:** AnswerIndividualAddress  
 **MsgID:** 22 dec / 0x16 hex  
-**Description:** Answers a ReadDeviceInfo message with the device's individual address.  
+**Description:** Answers a ReadIndividualAddress message with the device's individual address.  
 **Requires Programming Mode:** n/a
 
 
