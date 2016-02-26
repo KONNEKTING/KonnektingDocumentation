@@ -72,6 +72,16 @@ In principle yes, but we try to fill the gaps from the beginning of the list.
     <td>KNX.Matthias[a]gmx.de</td>
     <td>15.02.2016</td>
   </tr>  
+  
+  <!-- ### 48842 ### --->
+  <tr>
+    <td>48842</td>
+    <td>BECA</td>
+    <td>Josef L.</td>
+    <td>KNX User Forum</td>
+    <td>josef-konnekting[a]2lj.de</td>
+    <td>26.02.2016</td>
+  </tr>    
 
   <!-- ### 49374 ### --->
   <tr>
