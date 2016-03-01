@@ -73,15 +73,21 @@ void setup() {
               DEVICE_ID, 
               REVISION);
               
-    // you can access your parameters by callig
-    byte paramId0 = Tools.getUINT8Param(0);
+    if (!Tools.isFactorySetting()) {
+        
+        // you can access your parameters by callig
+        byte paramId0 = Tools.getUINT8Param(0);
     
-    // There's a getXXXXParam method for each known parameter type
+        // There's a getXXXXParam method for each known parameter type
+    }
 }
 
 void loop() {
     // handle KNX stuff
     Knx.task();
+    if (!Tools.getProgState()) {
+        // do device related stuff
+    }
 }
 ```
 
