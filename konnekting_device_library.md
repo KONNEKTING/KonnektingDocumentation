@@ -271,3 +271,62 @@ ___
 * **Description:** request the (local) group object value to be updated with the value from the bus. Note that this function is _asynchroneous_, the update completion is notified by the knxEvents() callback. This function is relevant only for objects with UPDATE and TRANSMIT flags set.
 * **Parameters:** "objectIndex" is the index (in the list) of the object to be updated. 
 * **Example:** ```Knx.update(0); // request the update of the object with index 0.```
+
+
+### 4/ Working with the device
+___
+**`bool isFactorySetting();`**
+* **Description:**  Returns the current device state. Use this before asking for device parameters. If is factory setting, parameters are not yet initialized and do not contain valid values!  
+
+* **Example:** 
+```
+if (!Tools.isFactorySetting()) {
+    // now you can be sure that device params contain valid values
+}
+```
+
+___
+**`uint8_t getUINT8Param(byte index);`**  
+**`int8_t getINT8Param(byte index);`**  
+**`uint16_t getUINT16Param(byte index);`**  
+**`int16_t getINT16Param(byte index);`**  
+**`uint32_t getUINT32Param(byte index);`**  
+**`int32_t getINT32Param(byte index);`**  
+* **Description:**  Returns the parameter value which has been programmed via the KONNEKTING Suite. You have to make sure you use the method that matches the parameter type (UINT8, INT8, UNINT16, ...). Otherwise you will get an 0-value.
+* **Parameters:** "index" is the ID of your parameter, as it is defined in the [.knxdevice.xml](/konnekting_xml_device_description.md).
+
+* **Example:** 
+```
+byte myUINT8Param = Tools.getUINT8Param(0);
+char myINT8Param = Tools.getINT8Param(1);
+
+int myINT16Param = Tools.getINT16Param(2);
+unsigned int myUINT16Param = Tools.getUINT16Param(3);
+
+long myINT32Param = Tools.getINT32Param(4);
+unsigned long myUINT32Param = Tools.getUINT32Param(5);
+```
+
+___
+**`bool getProgState();`**
+* **Description:**  Returns the current programming state of the device. You should use this to suspend sketch action (reading sensors etc.) while programming mode is active.  
+* **Example:** 
+```
+if (!Tools.getProgState()) {
+    // do whatever is required for your device, reading sensors, procession I/O, ...
+}
+```
+
+
+___
+**`int getFreeEepromOffset();`**
+* **Description:**  Returns a EEPROM index offset, at which it is save to store your device related data. **WARNING** Don't write in the area in front of this index. YOU WILL BREAK YOUR COM-OBJECTS AND DEVICE PARAMETER DATA!!!**
+* **Example:** 
+```
+// writing a 4-byte value to EEPROM
+int freeEepromOffset = Tools.getFreeEepromOffset();
+EEPROM.write(freeEepromOffset, myData[0]);
+EEPROM.write(freeEepromOffset+1, myData[1]);
+EEPROM.write(freeEepromOffset+2, myData[2]);
+EEPROM.write(freeEepromOffset+3, myData[3]);
+```
