@@ -320,7 +320,7 @@ if (!Tools.getProgState()) {
 
 ___
 **`int getFreeEepromOffset();`**
-* **Description:**  Returns a EEPROM index offset, at which it is save to store your device related data. **WARNING** Don't write in the area in front of this index. YOU WILL BREAK YOUR COM-OBJECTS AND DEVICE PARAMETER DATA!!!**
+* **Description:**  Returns a EEPROM index offset, at which it is save to store your device related data. **WARNING: Don't write in the area in front of this index. YOU WILL BREAK YOUR COM-OBJECTS AND DEVICE PARAMETER DATA!!!**
 * **Example:** 
 ```
 // writing a 4-byte value to EEPROM
