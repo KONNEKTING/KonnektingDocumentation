@@ -304,7 +304,7 @@ ___
 * **Example:** 
 ```
 byte myUINT8Param = Tools.getUINT8Param(0);
-char myINT8Param = Tools.getINT8Param(1);
+signed int myINT8Param = Tools.getINT8Param(1);
 
 int myINT16Param = Tools.getINT16Param(2);
 unsigned int myUINT16Param = Tools.getUINT16Param(3);
