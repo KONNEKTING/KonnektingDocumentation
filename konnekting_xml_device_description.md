@@ -84,7 +84,7 @@ If you haven't registered a manufacturer-id yet, NOW would be the best time for 
                     <!--
                         And beside a name, you have to provide the at least:
                         - Type: 
-                            The variable type of your parameter
+                            The variable type of your number parameter
                             
                             uint8: unsigned 8-bit integer: 0..255
                             int8: signed 8-bit integer: -128..127
@@ -95,7 +95,17 @@ If you haven't registered a manufacturer-id yet, NOW would be the best time for 
                             uint32: unsigned 32-bit integer: 0..4294967295
                             int32: signed 32-bit integer: -2147483648..2147483647
                             
-                            This attribute is MANDATORY.
+                            And there's a type for raw data, called "raw". THis is f.i. useful 
+                            if you have a parameter for IR hexcodes or 1-wire serialnumbers etc.
+                            The Suite will let you enter the data as HEX.
+                            
+                            raw1: 1 byte raw data
+                            raw2: 2 byte raw data
+                            .
+                            .
+                            raw11: 11 byte raw data
+                            
+                            This attribute is MANDATORY and there's - except for DEFAULT - no other attribute possible!
                             
                         - Default
                             the hexadecimal representation of the default-value, 
