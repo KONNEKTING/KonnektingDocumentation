@@ -95,7 +95,7 @@ If you haven't registered a manufacturer-id yet, NOW would be the best time for 
                             uint32: unsigned 32-bit integer: 0..4294967295
                             int32: signed 32-bit integer: -2147483648..2147483647
                             
-                            And there's a type for raw data, called "raw". THis is f.i. useful 
+                            And there is a type for raw data, called "raw". This is f.i. useful 
                             if you have a parameter for IR hexcodes or 1-wire serialnumbers etc.
                             The Suite will let you enter the data as HEX.
                             
