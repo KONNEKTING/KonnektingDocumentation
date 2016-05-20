@@ -357,7 +357,7 @@ Flag masks: <br/>0x80: Factory-Flag: 1 = factory settings, 0 = EEPROM settings<b
 
 **Message Name:** WriteCommObject  
 **MsgID:** 40 dec / 0x28 hex  
-**Description:** Writes up to 3 GAs for a specific CommObjects. Device will respond with a "Acknowledge" message.  
+**Description:** Writes a GA for a specific CommObjects. Device will respond with a "Acknowledge" message.  
 **Requires Programming Mode:** yes
 
 <table>
