@@ -292,7 +292,8 @@ Flag masks: <br/>0x80: Factory-Flag: 1 = factory settings, 0 = EEPROM settings<b
 <table>
     <tr><th>Byte no#</th><th>Description</th></tr>
     <tr><td>2</td><td>Parameter ID</td></tr>
-    <tr><td>3</td><td align="center" rowspan="11">0x00, unused</td></tr>
+    <tr><td>3</td><td align="center" rowspan="11">up to 11 bytes of parameter data, rest is filled with 0x00. 
+    Receiver has to know how much bytes the parameter with id XYZ has!</td></tr>
     <tr><td>4</td></tr>
     <tr><td>5</td></tr>
     <tr><td>6</td></tr>
