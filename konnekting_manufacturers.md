@@ -67,9 +67,9 @@ In principle yes, but we try to fill the gaps from the beginning of the list.
   <tr>
     <td>7070</td>
     <td>1B9E</td>
-    <td>Eugenius Adminius</td>
+    <td>Eugen Burkowski</td>
     <td>KONNEKTING</td>
-    <td>eugenius707[a]gmail.com</td>
+    <td>e.burkowski[a]konnekting.de</td>
     <td>12.02.2016</td>
   </tr>    
   
