@@ -63,6 +63,16 @@ In principle yes, but we try to fill the gaps from the beginning of the list.
     <td>28.02.2015</td>
   </tr>  
   
+  <!-- ### 258 ### --->
+  <tr>
+    <td>258</td>
+    <td>0102</td>
+    <td>ProtoLab</td>
+    <td>3D printers and others prototypes</td>
+    <td>protolabch[a]gmail.com</td>
+    <td>25.08.2016</td>
+  </tr>  
+  
   <!-- ### 7070 ### --->
   <tr>
     <td>7070</td>
