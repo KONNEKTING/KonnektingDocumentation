@@ -29,7 +29,7 @@ In principle yes, but we try to fill the gaps from the beginning of the list.
     <th>ID hex</th>
     <th>Manufacturer Name</th>
     <th>Description</th>
-    <th>Contact</th>
+    <th>Contact*</th>
     <th>Date</th>
   </tr>
   
