@@ -58,7 +58,7 @@ If you haven't registered a manufacturer-id yet, NOW would be the best time for 
             <Group name="A Parameter Group">
             
                 <!--
-                    Each parameter needs an ID. The first parameter has to have ID="0". 
+                    Each parameter needs an ID. The first parameter has to have Id="0". 
                     The ID must be provided as a readable integer.
                     
                     You can distribute your parameters in any order over the groups. 
@@ -75,8 +75,10 @@ If you haven't registered a manufacturer-id yet, NOW would be the best time for 
                         
                     This will just waste one byte of your EEPROM memory in your sketch. 
                     
+                    IdName is optional and can be used together with the KONNEKTING Code-Creator to
+                    auto-create Arduino-code. Ensure that the IdName attribute has only alphabetic chars and no whitespaces, special-chars etc.
                 -->
-                <Parameter Id="0">
+                <Parameter Id="0" IdName="aParameter">
                     
                     <!-- If course a parameter needs a name, which you can define here -->
                     <Description>A Parameter</Description>
@@ -105,13 +107,16 @@ If you haven't registered a manufacturer-id yet, NOW would be the best time for 
                             .
                             raw11: 11 byte raw data
                             
+                            string11: max. 11 byte ISO-8859-1 encoded string/text. Unused, tailing characters are filled with 0x00
+                            
                             This attribute is MANDATORY and there's - except for DEFAULT - no other attribute possible!
                             
                         - Default
                             the hexadecimal representation of the default-value, 
-                            according to the given type, incl. leading zeros, f.i.
+                            according to the given type, incl. leading/tailing zeros, f.i.
                             a 16-bit type needs four hex-characters: 00FF
                             a 32-bit type needs eight hex-characters: 000000FF
+                            a 11-byte-string: 666F6F2062617200000000 ("foo bar")
                             This attribute is MANDATORY.
                             
                         Optional:
@@ -137,7 +142,7 @@ If you haven't registered a manufacturer-id yet, NOW would be the best time for 
                             the 02hex value actually means 60ms and FFhex means no delay.
                             
                         - Min/Max
-                            Can only be used when no Options attribute is set. This will limit the 
+                            Can only be used when no Options attribute is set and with a number type. This will limit the 
                             value the user is allowed to enter between Min and Max. The provided
                             value needs to be hex again with leading zeros according to the type.
                     -->
@@ -145,12 +150,12 @@ If you haven't registered a manufacturer-id yet, NOW would be the best time for 
                     
                 </Parameter>
                 
-                <Parameter Id="1">
+                <Parameter Id="1" IdName="anotherParameter">
                     <Description>Another Parameter</Description>
                     <Value Type="int16" Default="0001" Options=""/>
                 </Parameter>
                 
-                <Parameter Id="2">
+                <Parameter Id="2" IdName="yetAnotherParameter">
                     <Description>Yet Another Parameter</Description>
                     <Value Type="uint8" Default="00" Options="00=10ms|01=30ms|02=60ms|04=120ms|FF=no delay"/>
                 </Parameter>
@@ -178,19 +183,47 @@ If you haven't registered a manufacturer-id yet, NOW would be the best time for 
                 <!-- and a description of the functiono of this comm object-->
                 <Function>Test-Function #1</Function>
                 <!-- 
-                    Here you should provide the Datapoint Type for this CommObject
+                    Here you have to provide the Datapoint Type for this CommObject
                     Format:
                         x.yyy
                     where x = main type number, without leading zeros
                     and yyy = sub type number, with leading zeros to have 3 characters
                 -->
-                <DataPointType>1</DataPointType>
+                <DataPointType>1.001</DataPointType>
+                
+                <!-- 
+                    ComObj communication flags. 
+                    
+                    The "Flags" is a single hexadecimal byte, 
+                    that indicates the set communication flags of the ComObj by setting/unsetting single bits of that byte.
+                    
+                    Flags are:
+                        C   Communication
+                        R   Read
+                        R   Write
+                        T   Transmit
+                        U   Update
+                        I   Init
+                        
+                    (for more details about the flags, read: http://www.knx.org/fileadmin/template/documents/downloads_support_menu/KNX_tutor_seminar_page/Advanced_documentation/02_Flags_E1008a.pdf)
+                    
+                    B7  B6  B5  B4  B3  B2  B1  B0
+                    xx  xx   C   R   W   T   U   I  
+                    
+                    Bit B6 and B7 are unused.
+                    
+                    Common flag-combinations:
+                        * C+R+T -> "Sensor Profile" -> 0x34
+                        * C+W+U -> "Logical Input Profile" -> 0x2A
+                -->
+                <Flags>34</Flags>
             </CommObject>
             
             <CommObject Id="1">
                 <Name>My Second Com Object</Name>
                 <Function>Test-Function #2</Function>
                 <DataPointType>2</DataPointType>
+                <Flags>34</Flags>
             </CommObject>
         </CommObjects>
     </Device>
