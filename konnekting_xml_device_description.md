@@ -215,7 +215,7 @@ If you haven't registered a manufacturer-id yet, NOW would be the best time for 
                     
                     Common flag-combinations:
                         * "Sensor Profile" -> C+R+T -> 32+16+8 = 52 (integer value)
-                        * "Logical Input Profile" -> C+W+U -> 32+16+2 = 42 (integer value)
+                        * "Logical Input Profile" -> C+W+U -> 32+8+2 = 42 (integer value)
                 -->
                 <Flags>52</Flags>
             </CommObject>
