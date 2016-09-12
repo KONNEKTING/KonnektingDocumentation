@@ -224,7 +224,7 @@ If you haven't registered a manufacturer-id yet, NOW would be the best time for 
                 <Name>My Second Com Object</Name>
                 <Function>Test-Function #2</Function>
                 <DataPointType>2</DataPointType>
-                <Flags>34</Flags>
+                <Flags>42</Flags>
             </CommObject>
         </CommObjects>
     </Device>
