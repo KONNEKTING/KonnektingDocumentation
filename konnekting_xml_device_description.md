@@ -194,7 +194,7 @@ If you haven't registered a manufacturer-id yet, NOW would be the best time for 
                 <!-- 
                     ComObj communication flags. 
                     
-                    The "Flags" is a single hexadecimal byte, 
+                    The "Flags" is a single byte (integer value), 
                     that indicates the set communication flags of the ComObj by setting/unsetting single bits of that byte.
                     
                     Flags are:
@@ -207,16 +207,17 @@ If you haven't registered a manufacturer-id yet, NOW would be the best time for 
                         
                     (for more details about the flags, read: http://www.knx.org/fileadmin/template/documents/downloads_support_menu/KNX_tutor_seminar_page/Advanced_documentation/02_Flags_E1008a.pdf)
                     
-                    B7  B6  B5  B4  B3  B2  B1  B0
-                    xx  xx   C   R   W   T   U   I  
+                     B7  B6  B5  B4  B3  B2  B1  B0 (Bit number)
+                    128  64  32  16   8   4   2   1 (integer value)
+                     xx  xx   C   R   W   T   U   I (Flag) 
                     
                     Bit B6 and B7 are unused.
                     
                     Common flag-combinations:
-                        * C+R+T -> "Sensor Profile" -> 0x34
-                        * C+W+U -> "Logical Input Profile" -> 0x2A
+                        * "Sensor Profile" -> C+R+T -> 32+16+8 = 52 (integer value)
+                        * "Logical Input Profile" -> C+W+U -> 32+16+2 = 42 (integer value)
                 -->
-                <Flags>34</Flags>
+                <Flags>52</Flags>
             </CommObject>
             
             <CommObject Id="1">
