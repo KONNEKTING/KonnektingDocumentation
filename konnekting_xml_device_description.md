@@ -200,7 +200,7 @@ If you haven't registered a manufacturer-id yet, NOW would be the best time for 
                     Flags are:
                         C   Communication
                         R   Read
-                        R   Write
+                        W   Write
                         T   Transmit
                         U   Update
                         I   Init
