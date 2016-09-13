@@ -163,11 +163,25 @@ If you haven't registered a manufacturer-id yet, NOW would be the best time for 
                     <Value Type="uint8" Default="00" Options="00=10ms|01=30ms|02=60ms|04=120ms|FF=no delay"/>
                 </Parameter>
                 
+                <Parameter Id="3" IdName="activate1">
+                    <Description>Activate 'Another Parameter'</Description>
+                    <Value Type="uint8" Default="01" Options="00=disabled|01=enabled"/>
+                </Parameter>
+                
+                <Parameter Id="4" IdName="activate2">
+                    <Description>Activate 'Another Parameter Group'</Description>
+                    <Value Type="uint8" Default="01" Options="00=disabled|01=enabled"/>
+                </Parameter>
+                
+                <Parameter Id="5" IdName="activate3">
+                    <Description>Activate 'My Second Com Object'</Description>
+                    <Value Type="uint8" Default="01" Options="00=disabled|01=enabled"/>
+                </Parameter>                
             </ParameterGroup>
             
             <ParameterGroup Id="1" Name="Another Parameter Group">
-                <Parameter Id="4">
-                    <Description>Verhalten nach Busspannungsausfall</Description>
+                <Parameter Id="6">
+                    <Description>Another parameter in another parametergroup</Description>
                     <Value Type="uint8" Default="02" Options="00=Aus|01=An|02=letzter Wert|04=Helligkeitswert"/>
                 </Parameter>
             </Group>
@@ -230,6 +244,42 @@ If you haven't registered a manufacturer-id yet, NOW would be the best time for 
                 <Flags>42</Flags>
             </CommObject>
         </CommObjects>
+        
+        <!--
+            If you want to hide CommObjects, Parametergroups or Parameters depending on parameter values,
+            you can define dependencies here.
+            
+            ParameterDependency:        T
+                The visibility of a parameter depends on the value of another parameter
+                * ParamId references the affected Parameter
+                
+            ParameterGroupDependency:   
+                The visibility of a parameter group depends on the value of another parameter
+                * ParamGroupId references the affected ParameterGroup
+                
+            CommObjectDependency:       
+                The visibility of a CommObject depends on the value of a parameter
+                * CommObjId references the affected CommObject
+                
+            All three depedency types have three common attributes:
+            
+                * Test: one of
+                    - eq = equals
+                    - gt = greater than
+                    - lt = less than
+                    - ge = greater or equals than
+                    - le = less or equals than
+                * TestParamId: the parameter which's value is been tested for setting visibility
+                * TestValue: the value the parameter is tested for
+            
+            !!! There's one limitation: The parameters that is used as a dependency (=referenced by TestParamId) needs
+            the parameter type "uint8". Other types are not supported.
+        -->
+        <Dependencies>
+            <ParameterDependency ParamId="1" Test="eq" TestParamId="3" TestValue="01"/>
+	        <ParameterGroupDependency ParamGroupId="1" Test="eq" TestParamId="4" TestValue="01"/>
+            <CommObjectDependency CommObjId="1" Test="eq" TestParamId="5" TestValue="01"/>
+        </Dependencies>
     </Device>
 </KonnektingDevice>
 ```
