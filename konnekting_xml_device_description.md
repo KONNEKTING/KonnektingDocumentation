@@ -16,7 +16,9 @@ If you haven't registered a manufacturer-id yet, NOW would be the best time for 
 
 ```XML
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<KonnektingDevice xmlns="http://konnekting.de/xml/KonnektingDevice/v0">
+<KonnektingDevice xmlns="http://konnekting.de/xml/KonnektingDevice/v0" 
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+    xsi:schemaLocation="http://konnekting.de/xml/KonnektingDevice/v0 http://konnekting.de/xml/KonnektingDevice/KonnektingDeviceV0.xsd">
     
     <!-- 
         Herer you have to provide your IDs and device revision. 
