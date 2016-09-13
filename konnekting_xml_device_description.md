@@ -50,10 +50,13 @@ If you haven't registered a manufacturer-id yet, NOW would be the best time for 
         
             <!--
                 Parameters are grouped. It's not allowed to have a parameter without a group.
-                The Ordering of the group is irrelevant. All you have to do: 
-                provide a reasonable name and set an ID (start with 0 and increment by 1)
-                You can have as much groups as you like. There is no real limit 
-                (except file and main memory limit of your machine).
+                
+                Each group needs an ID and readable name. The first group has to have Id="0". 
+                The ID must be provided as a readable integer and you must not have Id-gaps.
+                The name is display in the KONNEKTING Suite.
+
+                You can have as much groups as you like. Okay, actually the limit is 256. 
+                But that should be enough.
             -->
             <ParameterGroup Name="A Parameter Group" Id="0">
             
