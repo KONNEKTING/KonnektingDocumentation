@@ -163,16 +163,16 @@ If you haven't registered a manufacturer-id yet, NOW would be the best time for 
                     <Value Type="uint8" Default="00" Options="00=10ms|01=30ms|02=60ms|04=120ms|FF=no delay"/>
                 </Parameter>
                 
-            </Group>
+            </ParameterGroup>
             
-            <Group name="Another Parameter Group">
+            <ParameterGroup Id="1" Name="Another Parameter Group">
                 <Parameter Id="4">
                     <Description>Verhalten nach Busspannungsausfall</Description>
                     <Value Type="uint8" Default="02" Options="00=Aus|01=An|02=letzter Wert|04=Helligkeitswert"/>
                 </Parameter>
             </Group>
             
-        </Parameters>
+        </ParameterGroup>
         
         <CommObjects>
             <!-- 
