@@ -205,7 +205,7 @@ If you haven't registered a manufacturer-id yet, NOW would be the best time for 
                     Format:
                         x.yyy
                     where x = main type number, without leading zeros
-                    and yyy = sub type number, with leading zeros to have 3 characters
+                    and yyy = sub type number, with leading zeros to pad up to 3 characters for values [0..999].
                 -->
                 <DataPointType>1.001</DataPointType>
 
@@ -241,7 +241,7 @@ If you haven't registered a manufacturer-id yet, NOW would be the best time for 
             <CommObject Id="1">
                 <Name>My Second Com Object</Name>
                 <Function>Test-Function #2</Function>
-                <DataPointType>2</DataPointType>
+                <DataPointType>1.001</DataPointType>
                 <Flags>42</Flags>
             </CommObject>
         </CommObjects>
