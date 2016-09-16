@@ -73,6 +73,16 @@ In principle yes, but we try to fill the gaps from the beginning of the list.
     <td>25.08.2016</td>
   </tr>  
   
+  <!-- ### 259 ### --->
+  <tr>
+    <td>259</td>
+    <td>0103</td>
+    <td>Hassel K.</td>
+    <td>KNX User Forum</td>
+    <td>hassel[a]audiocommand.de</td>
+    <td>16.09.2016</td>
+  </tr>    
+  
   <!-- ### 7070 ### --->
   <tr>
     <td>7070</td>
