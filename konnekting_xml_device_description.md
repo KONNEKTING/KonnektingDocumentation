@@ -266,6 +266,7 @@ If you haven't registered a manufacturer-id yet, NOW would be the best time for 
 
                 * Test: one of
                     eq = equals
+                    ne = not equals
                     gt = greater than
                     lt = less than
                     ge = greater or equals than
