@@ -287,9 +287,9 @@ Flag masks: <br/>0x80: Factory-Flag: 1 = factory settings, 0 = EEPROM settings<b
 
 <table>
     <tr><th>Byte no#</th><th>Description</th></tr>
-    <tr><td>2</td><td>memoryaddress low</td></tr>
-    <tr><td>3</td><td>memoryaddress high</td></tr>
-    <tr><td>4</td><td>number of bytes</td></tr>
+    <tr><td>2</td><td>Memory Address low</td></tr>
+    <tr><td>3</td><td>Memory Address high</td></tr>
+    <tr><td>4</td><td>number of bytes to write.<br/>Range [1..9]</td></tr>
     <tr><td>5</td><td align="center" rowspan="9">memory value<br/>up to 9 bytes</td></tr>
     <tr><td>6</td></tr>
     <tr><td>7</td></tr>
