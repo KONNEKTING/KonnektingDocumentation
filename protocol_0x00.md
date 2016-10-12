@@ -16,13 +16,9 @@ This is the first protocol version.
 - [0x15 ReadIndividualAddress](#readindividualaddress)
 - [0x16 AnswerIndividualAddress](#answerindividualaddress)
 - ...
-- [0x1E WriteParameter](#writeparameter)
-- [0x1F ReadParameter](#readparameter)
-- [0x20 AnswerParameter](#answerparameter)
-- ...
-- [0x28 WriteCommObject](#writecommobject)
-- [0x29 ReadCommObject](#readcommobject)
-- [0x2A AnswerCommObject](#answercommobject)
+- [0x1E WriteMemory](#writememory)
+- [0x1F ReadMemory](#readmemory)
+- [0x20 AnswerMemory](#answermemory)
 - ...
 
   
@@ -53,7 +49,7 @@ This is the first protocol version.
          0x00..0xFE: errornous index<br>
          0xFF: no relevant index<br>
        </td></tr>
-    <tr><td>5</td><td align="center" rowspan="9">0x00, unused</td></tr>
+    <tr><td>5</td><td align="center" rowspan="9">0xFF, unused</td></tr>
     <tr><td>6</td></tr>
     <tr><td>7</td></tr>
     <tr><td>8</td></tr>
@@ -75,7 +71,7 @@ This is the first protocol version.
     <tr><th>Byte no#</th><th>Description</th></tr>
     <tr><td>2</td><td>IndividualAddress HI</td></tr>
     <tr><td>3</td><td>IndividualAddress LO</td></tr>
-    <tr><td>4</td><td align="center" rowspan="11">0x00, unused</td></tr>
+    <tr><td>4</td><td align="center" rowspan="11">0xFF, unused</td></tr>
     <tr><td>5</td></tr>
     <tr><td>6</td></tr>
     <tr><td>7</td></tr>
@@ -106,7 +102,7 @@ This is the first protocol version.
 Flag masks: <br/>0x80: Factory-Flag: 1 = factory settings, 0 = EEPROM settings<br/></td></tr>
     <tr><td>7</td><td>IndividualAddress HI</td></tr>
     <tr><td>8</td><td>IndividualAddress LO</td></tr>
-    <tr><td>9</td><td align="center" rowspan="5">0x00, unused</td></tr>
+    <tr><td>9</td><td align="center" rowspan="5">0xFF, unused</td></tr>
     <tr><td>10</td></tr>
     <tr><td>11</td></tr>
     <tr><td>12</td></tr>
@@ -125,7 +121,7 @@ Flag masks: <br/>0x80: Factory-Flag: 1 = factory settings, 0 = EEPROM settings<b
     <tr><th>Byte no#</th><th>Description</th></tr>
     <tr><td>2</td><td>IndividualAddress HI</td></tr>
     <tr><td>3</td><td>IndividualAddress LO</td></tr>
-    <tr><td>4</td><td align="center" rowspan="10">0x00, unused</td></tr>
+    <tr><td>4</td><td align="center" rowspan="10">0xFF, unused</td></tr>
     <tr><td>5</td></tr>
     <tr><td>6</td></tr>
     <tr><td>7</td></tr>
@@ -151,7 +147,7 @@ Flag masks: <br/>0x80: Factory-Flag: 1 = factory settings, 0 = EEPROM settings<b
     <tr><td>4</td><td><b>Mode:</b><br>
 							0x00 = OFF<br>
 							0x01 = ON</td></tr>
-    <tr><td>5</td><td align="center" rowspan="9">0x00, unused</td></tr>
+    <tr><td>5</td><td align="center" rowspan="9">0xFF, unused</td></tr>
     <tr><td>6</td></tr>
     <tr><td>7</td></tr>
     <tr><td>8</td></tr>
@@ -172,7 +168,7 @@ Flag masks: <br/>0x80: Factory-Flag: 1 = factory settings, 0 = EEPROM settings<b
 
 <table>
     <tr><th>Byte no#</th><th>Description</th></tr>
-    <tr><td>2</td><td align="center" rowspan="12">0x00, unused</td></tr>
+    <tr><td>2</td><td align="center" rowspan="12">0xFF, unused</td></tr>
     <tr><td>3</td></tr>
     <tr><td>4</td></tr>
     <tr><td>5</td></tr>
@@ -198,7 +194,7 @@ Flag masks: <br/>0x80: Factory-Flag: 1 = factory settings, 0 = EEPROM settings<b
     <tr><th>Byte no#</th><th>Description</th></tr>
     <tr><td>2</td><td>IndividualAddress HI</td></tr>
     <tr><td>3</td><td>IndividualAddress LO</td></tr>
-    <tr><td>4</td><td align="center" rowspan="10">0x00, unused</td></tr>
+    <tr><td>4</td><td align="center" rowspan="10">0xFF, unused</td></tr>
     <tr><td>5</td></tr>
     <tr><td>6</td></tr>
     <tr><td>7</td></tr>
@@ -221,7 +217,7 @@ Flag masks: <br/>0x80: Factory-Flag: 1 = factory settings, 0 = EEPROM settings<b
     <tr><th>Byte no#</th><th>Description</th></tr>
     <tr><td>2</td><td>IndividualAddress HI</td></tr>
     <tr><td>3</td><td>IndividualAddress LO</td></tr>
-    <tr><td>4</td><td align="center" rowspan="10">0x00, unused</td></tr>
+    <tr><td>4</td><td align="center" rowspan="10">0xFF, unused</td></tr>
     <tr><td>5</td></tr>
     <tr><td>6</td></tr>
     <tr><td>7</td></tr>
@@ -243,7 +239,7 @@ Flag masks: <br/>0x80: Factory-Flag: 1 = factory settings, 0 = EEPROM settings<b
 
 <table>
     <tr><th>Byte no#</th><th>Description</th></tr>
-    <tr><td>2</td><td align="center" rowspan="12">0x00, unused</td></tr>
+    <tr><td>2</td><td align="center" rowspan="12">0xFF, unused</td></tr>
     <tr><td>3</td></tr>
     <tr><td>4</td></tr>
     <tr><td>5</td></tr>
@@ -269,7 +265,7 @@ Flag masks: <br/>0x80: Factory-Flag: 1 = factory settings, 0 = EEPROM settings<b
     <tr><th>Byte no#</th><th>Description</th></tr>
     <tr><td>2</td><td>IndividualAddress HI</td></tr>
     <tr><td>3</td><td>IndividualAddress LO</td></tr>
-    <tr><td>4</td><td align="center" rowspan="10">0x00, unused</td></tr>
+    <tr><td>4</td><td align="center" rowspan="10">0xFF, unused</td></tr>
     <tr><td>5</td></tr>
     <tr><td>6</td></tr>
     <tr><td>7</td></tr>
@@ -282,19 +278,19 @@ Flag masks: <br/>0x80: Factory-Flag: 1 = factory settings, 0 = EEPROM settings<b
 </table>
 
 
-### WriteParameter
+### WriteMemory
 
-**Message Name:** WriteParameter  
+**Message Name:** WriteMemory  
 **MsgID:** 30 dec / 0x1E hex  
-**Description:** Writes a value for a specific parameter. Device will respond with a "Acknowledge" message.  			  
+**Description:** Writes data to the device (eeprom) memory. Device will respond with a "Acknowledge" message.  			  
 **Requires Programming Mode:** yes
 
 <table>
     <tr><th>Byte no#</th><th>Description</th></tr>
-    <tr><td>2</td><td>Parameter ID</td></tr>
-    <tr><td>3</td><td align="center" rowspan="11">parameter value<br/>up to 11 bytes, depends on the parameter</td></tr>
-    <tr><td>4</td></tr>
-    <tr><td>5</td></tr>
+    <tr><td>2</td><td>memoryaddress low</td></tr>
+    <tr><td>3</td><td>memoryaddress high</td></tr>
+    <tr><td>4</td><td>number of bytes</td></tr>
+    <tr><td>5</td><td align="center" rowspan="9">memory value<br/>up to 9 bytes</td></tr>
     <tr><td>6</td></tr>
     <tr><td>7</td></tr>
     <tr><td>8</td></tr>
@@ -306,19 +302,19 @@ Flag masks: <br/>0x80: Factory-Flag: 1 = factory settings, 0 = EEPROM settings<b
 </table>
 
 
-### ReadParameter
+### ReadMemory
 
-**Message Name:** ReadParameter  
+**Message Name:** ReadMemory  
 **MsgID:** 31 dec / 0x1F hex  
-**Description:** Reads a value for a specific parameter  
+**Description:** Reads a data from the device's memory.
 **Requires Programming Mode:** yes
 
 <table>
     <tr><th>Byte no#</th><th>Description</th></tr>
-    <tr><td>2</td><td>Parameter ID</td></tr>
-    <tr><td>3</td><td align="center" rowspan="11">0x00, unused</td></tr>
-    <tr><td>4</td></tr>
-    <tr><td>5</td></tr>
+    <tr><td>2</td><td>memoryaddress low</td></tr>
+    <tr><td>3</td><td>memoryaddress high</td></tr>
+    <tr><td>4</td><td>number of bytes to read from given address. range [1..12]<br/></td></tr>
+    <tr><td>5</td><td align="center" rowspan="11">0xFF, unused</td></tr>
     <tr><td>6</td></tr>
     <tr><td>7</td></tr>
     <tr><td>8</td></tr>
@@ -329,18 +325,18 @@ Flag masks: <br/>0x80: Factory-Flag: 1 = factory settings, 0 = EEPROM settings<b
     <tr><td>13</td></tr>
 </table>
 
-### AnswerParameter
+### AnswerMemory
 
-**Message Name:** AnswerParameter  
+**Message Name:** AnswerMemory  
 **MsgID:** 32 dec / 0x20 hex  
-**Description:** Answers a ReadDeviceInfo message with the device's individual address.  
+**Description:** Answers a ReadMemory message with the requested data from the device's memory.
 **Requires Programming Mode:** n/a
 
 
 <table>
     <tr><th>Byte no#</th><th>Description</th></tr>
-    <tr><td>2</td><td>Parameter ID</td></tr>
-    <tr><td>3</td><td align="center" rowspan="11">parameter value<br/>up to 11 bytes, depends on the parameter</td></tr>
+    <tr><td>2</td><td align="center" rowspan="11">memory data<br/>up to 12 bytes. Unused tailing bytes are filled with 0xFF.</td></tr>
+    <tr><td>3</td></tr>
     <tr><td>4</td></tr>
     <tr><td>5</td></tr>
     <tr><td>6</td></tr>
@@ -353,73 +349,3 @@ Flag masks: <br/>0x80: Factory-Flag: 1 = factory settings, 0 = EEPROM settings<b
     <tr><td>13</td></tr>
 </table>
 
-### WriteCommObject
-
-**Message Name:** WriteCommObject  
-**MsgID:** 40 dec / 0x28 hex  
-**Description:** Writes a GA for a specific CommObjects. Device will respond with a "Acknowledge" message.  
-**Requires Programming Mode:** yes
-
-<table>
-    <tr><th>Byte no#</th><th>Description</th></tr>
-    <tr><td>2</td><td>CommObject ID</td></tr>    
-    <tr><td>3</td><td>GA HI</td></tr>
-    <tr><td>4</td><td>GA LO</td></tr>
-    <tr><td>5</td><td>Settings</td></tr>
-    <tr><td>6</td><td align="center" rowspan="8">0x00, unused</td></tr>
-    <tr><td>7</td></tr>
-    <tr><td>8</td></tr>
-    <tr><td>9</td></tr>
-    <tr><td>10</td></tr>
-    <tr><td>11</td></tr>
-    <tr><td>12</td></tr>
-    <tr><td>13</td></tr>
-</table>
-
-
-### ReadCommObject
-
-**Message Name:** ReadCommObject  
-**MsgID:** 41 dec / 0x29 hex  
-**Description:** Reads up to 3 GAs for a specific CommObjects.   
-**Requires Programming Mode:** no
-
-<table>
-    <tr><th>Byte no#</th><th>Description</th></tr>
-    <tr><td>2</td><td>ComObjectID</td></tr>
-    <tr><td>3</td><td align="center" rowspan="11">0x00, unused</td></tr>
-    <tr><td>4</td></tr>
-    <tr><td>5</td></tr>
-    <tr><td>6</td></tr>
-    <tr><td>7</td></tr>
-    <tr><td>8</td></tr>
-    <tr><td>9</td></tr>
-    <tr><td>10</td></tr>
-    <tr><td>11</td></tr>
-    <tr><td>12</td></tr>
-    <tr><td>13</td></tr>
-</table>
-
-### AnswerCommObject
-
-**Message Name:** AnswerCommObject  
-**MsgID:** 42 dec / 0x2A hex  
-**Description:** Answers read request for a specific CommObjects. 
-**Requires Programming Mode:** n/a
-
-
-<table>
-    <tr><th>Byte no#</th><th>Description</th></tr>
-    <tr><td>2</td><td>CommObject ID</td></tr>    
-    <tr><td>3</td><td>GA HI</td></tr>
-    <tr><td>4</td><td>GA LO</td></tr>
-    <tr><td>5</td><td>Settings</td></tr>
-    <tr><td>6</td><td align="center" rowspan="8">0x00, unused</td></tr>
-    <tr><td>7</td></tr>
-    <tr><td>8</td></tr>
-    <tr><td>9</td></tr>
-    <tr><td>10</td></tr>
-    <tr><td>11</td></tr>
-    <tr><td>12</td></tr>
-    <tr><td>13</td></tr>
-</table>
