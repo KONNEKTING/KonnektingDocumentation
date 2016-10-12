@@ -311,9 +311,9 @@ Flag masks: <br/>0x80: Factory-Flag: 1 = factory settings, 0 = EEPROM settings<b
 
 <table>
     <tr><th>Byte no#</th><th>Description</th></tr>
-    <tr><td>2</td><td>memoryaddress low</td></tr>
-    <tr><td>3</td><td>memoryaddress high</td></tr>
-    <tr><td>4</td><td>number of bytes to read from given address. range [1..12]<br/></td></tr>
+    <tr><td>2</td><td>Memory Address low</td></tr>
+    <tr><td>3</td><td>Memory Address high</td></tr>
+    <tr><td>4</td><td>number of bytes to read from address.<br/>Range [1..12]<br/></td></tr>
     <tr><td>5</td><td align="center" rowspan="11">0xFF, unused</td></tr>
     <tr><td>6</td></tr>
     <tr><td>7</td></tr>
@@ -335,7 +335,7 @@ Flag masks: <br/>0x80: Factory-Flag: 1 = factory settings, 0 = EEPROM settings<b
 
 <table>
     <tr><th>Byte no#</th><th>Description</th></tr>
-    <tr><td>2</td><td align="center" rowspan="11">memory data<br/>up to 12 bytes. Unused tailing bytes are filled with 0xFF.</td></tr>
+    <tr><td>2</td><td align="center" rowspan="12">memory data, up to 12 bytes. <br/>Unused tailing bytes are filled with 0xFF.</td></tr>
     <tr><td>3</td></tr>
     <tr><td>4</td></tr>
     <tr><td>5</td></tr>
