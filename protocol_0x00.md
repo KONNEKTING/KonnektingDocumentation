@@ -404,9 +404,7 @@ Flag masks: <br/>0x80: Factory-Flag: 1 = factory settings, 0 = EEPROM settings<b
 
 **Message Name:** AnswerCommObject  
 **MsgID:** 42 dec / 0x2A hex  
-**Description:** Answers read request for up to 3 specific CommObjects. i.e. 
-number of tupels = 2, 
-then byte 3 to 8 contains two tupels. Rest is filled with 0x00."  
+**Description:** Answers read request for a specific CommObjects. 
 **Requires Programming Mode:** n/a
 
 
