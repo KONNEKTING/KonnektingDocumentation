@@ -83,6 +83,16 @@ In principle yes, but we try to fill the gaps from the beginning of the list.
     <td>16.09.2016</td>
   </tr>    
   
+  <!-- ### 260 ### --->
+  <tr>
+    <td>259</td>
+    <td>0104</td>
+    <td>simplesign.de</td>
+    <td>KONNEKTING</td>
+    <td>support[a]simplesign.de</td>
+    <td>16.09.2016</td>
+  </tr>    
+  
   <!-- ### 4112 ### --->
   <tr>
     <td>4112</td>
