@@ -28,14 +28,12 @@ The device library enables the Arduino to connect to the KNX bus.
 
 // Definition of the Communication Objects attached to the device
 KnxComObject KnxDevice::_comObjectsList[] = {
-    /* the programming com object: Do not remove or push to another index. Must be the first in the list! */
-    Tools.createProgComObject(),
     
     /* ComObject ID 0 : Your first com object, referenced in your device XML */ 
-    KnxComObject(G_ADDR(0, 0, 1), KNX_DPT_1_001, COM_OBJ_LOGIC_IN),
+    KnxComObject(KNX_DPT_1_001, COM_OBJ_LOGIC_IN),
     
     /* ComObject ID 1 */ 
-    KnxComObject(G_ADDR(0, 0, 2), KNX_DPT_1_001, COM_OBJ_SENSOR),
+    KnxComObject(KNX_DPT_1_001, COM_OBJ_SENSOR),
     
     // more com objects if you need ...
 };
@@ -43,7 +41,7 @@ const byte KnxDevice::_numberOfComObjects = sizeof (_comObjectsList) / sizeof (K
 
 // Definition of parameter size / type ...
 // Ensure that this matches your parameter configuration in your device XML
-byte KnxTools::_paramSizeList[] = {
+byte KonnektingDevice::_paramSizeList[] = {
 
     /* Param Index 0 */ PARAM_UINT8,
     /* Param Index 1 */ PARAM_INT16,
@@ -51,7 +49,7 @@ byte KnxTools::_paramSizeList[] = {
     
     // more parameters if you need
 };
-const byte KnxTools::_numberOfParams = sizeof (_paramSizeList); // do no change this code
+const byte KonnektingDevice::_numberOfParams = sizeof (_paramSizeList); // do no change this code
 
 
 
@@ -66,17 +64,17 @@ void knxEvents(byte index) {
 void setup() {
 
     // Initialize KNX enabled Arduino Board
-    Tools.init(KNX_SERIAL, 
+    Konnekting.init(KNX_SERIAL, 
               PROG_BUTTON_PIN, 
               PROG_LED_PIN, 
               MANUFACTURER_ID, 
               DEVICE_ID, 
               REVISION);
               
-    if (!Tools.isFactorySetting()) {
+    if (!Konnekting.isFactorySetting()) {
         
         // you can access your parameters by callig
-        byte paramId0 = Tools.getUINT8Param(0);
+        byte paramId0 = Konnekting.getUINT8Param(0);
     
         // There's a getXXXXParam method for each known parameter type
     }
@@ -85,7 +83,7 @@ void setup() {
 void loop() {
     // handle KNX stuff
     Knx.task();
-    if (!Tools.getProgState()) {
+    if (Konnekting.isReadyForApplication()) {
         // do device related stuff
     }
 }
@@ -95,7 +93,7 @@ void loop() {
 
 ## API
 ### 1/ Define the communication objects
-First of all, define the KNX communication objects of your bus device. For each object, define its group address its gets linked to, its datapoint type, and its flags. Theoritically, you can define up to 256 objects, even if in practical you are limited by the quantity of RAM (it would be worth measuring the max allowed number of objects depending on the memory available).
+First of all, define the KNX communication objects of your bus device. For each object, define its datapoint type, and its flags. Theoritically, you can define up to 255 objects, even if in practical you are limited by the quantity of RAM (it would be worth measuring the max allowed number of objects depending on the memory available).
 
 **`KnxComObject KnxDevice::_comObjectsList[];`**
 
@@ -104,10 +102,10 @@ First of all, define the KNX communication objects of your bus device. For each 
 * **Example:** 
 ```
 
-//            adress,			                         DataPoint ID,						                flags			
-KnxComObject{ G_ADDR(0,0,1) /* addr 0.0.1 */,		  KNX_DPT_1_001 /* 1.001 B1 DPT_Switch */ ,	          COM_OBJ_LOGIC_IN_INIT	} 
-KnxComObject{ G_ADDR(0,0,2) /* addr 0.0.2 */,		  KNX_DPT_5_010 /* 5.010 U8 DPT_Value_1_Ucount */ ,	  COM_OBJ_SENSOR		} 
-KnxComObject{ G_ADDR(0,0,3) /* addr 0.0.3 */,        KNX_DPT_1_003 /* 1.003 B1 DPT_Enable*/ ,		      0x30 /* C+R */		}
+//           DataPointType						                	flags			
+KnxComObject{KNX_DPT_1_001 /* 1.001 B1 DPT_Switch */ ,	          COM_OBJ_LOGIC_IN_INIT	} 
+KnxComObject{KNX_DPT_5_010 /* 5.010 U8 DPT_Value_1_Ucount */ ,	  COM_OBJ_SENSOR		} 
+KnxComObject{KNX_DPT_1_003 /* 1.003 B1 DPT_Enable*/ ,		      0x30 /* C+R */		}
 ```
 ___
 **`const byte KnxDevice::_comObjectsNb = sizeof(_comObjectsList) / sizeof(KnxComObject);`**
@@ -121,7 +119,7 @@ ___
 
 * **Example:** 
 ```
-Tools.init(KNX_SERIAL, 
+Konnekting.init(KNX_SERIAL, 
               PROG_BUTTON_PIN, 
               PROG_LED_PIN, 
               MANUFACTURER_ID, 
@@ -286,7 +284,7 @@ ___
 
 * **Example:** 
 ```
-if (!Tools.isFactorySetting()) {
+if (!Konnekting.isFactorySetting()) {
     // now you can be sure that device params contain valid values
 }
 ```
@@ -303,22 +301,22 @@ ___
 
 * **Example:** 
 ```
-byte myUINT8Param = Tools.getUINT8Param(0);
-signed int myINT8Param = Tools.getINT8Param(1);
+byte myUINT8Param = Konnekting.getUINT8Param(0);
+signed int myINT8Param = Konnekting.getINT8Param(1);
 
-int myINT16Param = Tools.getINT16Param(2);
-unsigned int myUINT16Param = Tools.getUINT16Param(3);
+int myINT16Param = Konnekting.getINT16Param(2);
+unsigned int myUINT16Param = Konnekting.getUINT16Param(3);
 
-long myINT32Param = Tools.getINT32Param(4);
-unsigned long myUINT32Param = Tools.getUINT32Param(5);
+long myINT32Param = Konnekting.getINT32Param(4);
+unsigned long myUINT32Param = Konnekting.getUINT32Param(5);
 ```
 
 ___
-**`bool getProgState();`**
-* **Description:**  Returns the current programming state of the device. You should use this to suspend sketch action (reading sensors etc.) while programming mode is active.  
+**`bool isReadyForApplication();`**
+* **Description:**  Returns the current ready state of the device. You should use this to suspend sketch action (reading sensors etc.) while device is not ready for application (e.g. in programming mode, ...). 
 * **Example:** 
 ```
-if (!Tools.getProgState()) {
+if (Konnekting.isReadyForApplication()) {
     // do whatever is required for your device, reading sensors, procession I/O, ...
 }
 ```
@@ -330,7 +328,7 @@ ___
 * **Example:** 
 ```
 // writing a 4-byte value to EEPROM
-int freeEepromOffset = Tools.getFreeEepromOffset();
+int freeEepromOffset = Konnekting.getFreeEepromOffset();
 EEPROM.write(freeEepromOffset, myData[0]);
 EEPROM.write(freeEepromOffset+1, myData[1]);
 EEPROM.write(freeEepromOffset+2, myData[2]);
