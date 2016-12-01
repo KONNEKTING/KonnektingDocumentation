@@ -41,6 +41,7 @@ With help of this XML file you can add new devices, give them an individual addr
 
 - [KONNEKTING Device Library](konnekting_device_library.md)
 - [KONNEKTING XML based device description](konnekting_xml_device_description.md)
+- [KONNEKTING icon/symbol/logo usage](konnekting_icon-symbol-logo_usage.md)
 - [KONNEKTING Suite](konnekting_suite.md)
 - [Telegram-based programming protocol](protocol_general.md)
 - [Programming Workflow](programming_workflow.md)
