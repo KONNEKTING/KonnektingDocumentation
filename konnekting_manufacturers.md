@@ -21,13 +21,15 @@ You can create up to 256 devices which can have 256 revisions. So in sum 65536 d
 3. Can I have ID 12345 (insert any ID here)?  
 In principle yes, but we try to fill the gaps from the beginning of the list. 
 
-# List
+# Manufacturer-List
+
+The following list shows the known/registered manufacturers (not devices!)_
 
 <table>
   <tr>
     <th>ID dec</th>
     <th>ID hex</th>
-    <th>Manufacturer Name</th>
+    <th>Name</th>
     <th>Description</th>
     <th>Contact*</th>
     <th>Date</th>
@@ -88,7 +90,7 @@ In principle yes, but we try to fill the gaps from the beginning of the list.
     <td>260</td>
     <td>0104</td>
     <td>simplesign.de</td>
-    <td>KONNEKTING</td>
+    <td></td>
     <td>support[a]simplesign.de</td>
     <td>07.11.2016</td>
   </tr>   
