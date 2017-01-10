@@ -85,13 +85,23 @@ In principle yes, but we try to fill the gaps from the beginning of the list.
   
   <!-- ### 260 ### --->
   <tr>
-    <td>259</td>
+    <td>260</td>
     <td>0104</td>
     <td>simplesign.de</td>
     <td>KONNEKTING</td>
     <td>support[a]simplesign.de</td>
     <td>07.11.2016</td>
-  </tr>    
+  </tr>   
+  
+  <!-- ### 261 ### --->
+  <tr>
+    <td>261</td>
+    <td>0105</td>
+    <td>ivande</td>
+    <td>KNX User Forum</td>
+    <td>ivande[a]gmx.net</td>
+    <td>07.11.2016</td>
+  </tr>   
   
   <!-- ### 4112 ### --->
   <tr>
