@@ -100,7 +100,7 @@ In principle yes, but we try to fill the gaps from the beginning of the list.
     <td>ivande</td>
     <td>KNX User Forum</td>
     <td>ivande[a]gmx.net</td>
-    <td>07.11.2016</td>
+    <td>10.01.2017</td>
   </tr>   
   
   <!-- ### 4112 ### --->
