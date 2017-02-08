@@ -10,5 +10,15 @@ This document describes a KONNEKTING DIN Rail case'd device.
 
 The case can be ordered directly from OKW. But keep in mind that you should reach 100EUR netto to overcome additional fees.
 
-
+## Component arrangement
 [work in progress]
+
+## PCB-Boards
+[work in progress]
+
+## Connectors
+[work in progress]
+
+## Cover
+[work in progress]
+
