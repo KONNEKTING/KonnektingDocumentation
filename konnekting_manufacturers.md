@@ -3,10 +3,11 @@
 If you want to create an KONNEKTING device, you have to have a manufacturer ID. The ID is a 16-bit value and is used to prevent conflicts when programming devices.
 You can register your ID for free. Please drop us a email with your 
 * Manufacturer Name
-* a short description
+* a short description of you and/or your company, at least your full name
 * and a contact information, like a valid email or mail address
 
---&gt; [register@konnekting.de](mailto:register@konnekting.de?Subject=KONNEKTING:%20Register%20Manufacturer-ID&body=Dear%20KONNEKTING%20Team,%0A%0APlease%20register%20me%20a%20manufacturer%20ID:%0A%0AManufacturer%20Name:%20Your%20manufacturer%20name%0ADescription:%20a%20short%20description%0AContact:%20contact%20information,%20like%20email%20or%20mail address%0A%0AWith%20kind%20regards,%0A%20%20Your%20Name)
+--&gt; [register@konnekting.de](mailto:register@konnekting.de?Subject=KONNEKTING:%20Register%20Manufacturer-ID&body=Dear%20KONNEKTING%20Team,%0A%0APlease%20register%20a%20manufacturer%20ID:%0A%0AManufacturer%20Name:%20Your%20manufacturer%20name%0ADescription:%20a%20short%20description%0AContact:%20contact%20information,%20like%20email%20or%20mail%20address)
+
 
 The Device ID and Revision, which is also required for a working KONNEKTING Device is completely up to you. You have to ensure by yourself that you do not create duplicates and conflicts.
 
@@ -39,7 +40,7 @@ The following list shows the known/registered manufacturers (not devices!)_
   <tr>
     <td>0..255</td>
     <td>0000..00FF</td>
-    <td>KONNEKTING</td>
+    <td>KONNEKTING Team</td>
     <td>system reserved</td>
     <td>info@konnekting.de</td>
     <td>01.01.2016</td>
@@ -60,7 +61,7 @@ The following list shows the known/registered manufacturers (not devices!)_
     <td>257</td>
     <td>0101</td>
     <td>dreamy1</td>
-    <td>KONNEKTING</td>
+    <td>KNX User Forum</td>
     <td>stejak9999[a]gmail.com</td>
     <td>28.02.2015</td>
   </tr>  
@@ -105,6 +106,16 @@ The following list shows the known/registered manufacturers (not devices!)_
     <td>10.01.2017</td>
   </tr>   
   
+  <!-- ### 3333 ### --->
+  <tr>
+    <td>3333</td>
+    <td>0D05</td>
+    <td>Ahlqvist</td>
+    <td>Joakim Ahlqvist</td>
+    <td>konnekting[a]ahlqvist.name</td>
+    <td>11.04.2017</td>
+  </tr>     
+  
   <!-- ### 4112 ### --->
   <tr>
     <td>4112</td>
@@ -120,7 +131,7 @@ The following list shows the known/registered manufacturers (not devices!)_
     <td>7070</td>
     <td>1B9E</td>
     <td>Eugen Burkowski</td>
-    <td>KONNEKTING</td>
+    <td>KONNEKTING Team</td>
     <td>e.burkowski[a]konnekting.de</td>
     <td>12.02.2016</td>
   </tr>    
@@ -150,7 +161,7 @@ The following list shows the known/registered manufacturers (not devices!)_
     <td>49374</td>
     <td>C0DE</td>
     <td>Alex C.</td>
-    <td>KONNEKTING</td>
+    <td>KONNEKTING Team</td>
     <td>knx[a]root1.de</td>
     <td>15.02.2016</td>
   </tr>
@@ -159,7 +170,7 @@ The following list shows the known/registered manufacturers (not devices!)_
   <tr>
     <td>57005</td>
     <td>DEAD</td>
-    <td>KONNEKTING</td>
+    <td>KONNEKTING Team</td>
     <td>For testing only</td>
     <td>info@konnekting.de</td>
     <td>01.01.2016</td>
