@@ -91,7 +91,7 @@ The following list shows the known/registered manufacturers (not devices!)_
     <td>260</td>
     <td>0104</td>
     <td>simplesign.de</td>
-    <td></td>
+    <td>Andreas Michel</td>
     <td>support[a]simplesign.de</td>
     <td>07.11.2016</td>
   </tr>   
