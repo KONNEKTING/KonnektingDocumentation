@@ -24,7 +24,7 @@ In principle yes, but we try to fill the gaps from the beginning of the list.
 
 # Manufacturer-List
 
-The following list shows the known/registered manufacturers (not devices!)_
+_The following list shows the known/registered manufacturers (not devices!)_
 
 <table>
   <tr>
