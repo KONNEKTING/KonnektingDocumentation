@@ -364,7 +364,7 @@ Flag masks: <br/>0x80: Factory-Flag: 1 = factory settings, 0 = EEPROM settings<b
 	    		0x01 = from device: sent every time prog-button is pressed<br/>
 	    		0x02 = to device: PING request<br/>
 	    		0x03 = from device: PONG response</td></tr>
-    <tr><td>3</td><td align="center" rowspan="11">0x00</td></tr>
+    <tr><td>3</td><td align="center" rowspan="11">0xFF, unused</td></tr>
     <tr><td>4</td></tr>
     <tr><td>5</td></tr>
     <tr><td>6</td></tr>
