@@ -20,6 +20,7 @@ This is the first protocol version.
 - [0x1F ReadMemory](#readmemory)
 - [0x20 AnswerMemory](#answermemory)
 - ...
+- [0xFF TEST](#TEST)
 
   
   
@@ -337,6 +338,33 @@ Flag masks: <br/>0x80: Factory-Flag: 1 = factory settings, 0 = EEPROM settings<b
     <tr><th>Byte no#</th><th>Description</th></tr>
     <tr><td>2</td><td align="center" rowspan="12">memory data, up to 12 bytes. <br/>Unused tailing bytes are filled with 0xFF.</td></tr>
     <tr><td>3</td></tr>
+    <tr><td>4</td></tr>
+    <tr><td>5</td></tr>
+    <tr><td>6</td></tr>
+    <tr><td>7</td></tr>
+    <tr><td>8</td></tr>
+    <tr><td>9</td></tr>
+    <tr><td>10</td></tr>
+    <tr><td>11</td></tr>
+    <tr><td>12</td></tr>
+    <tr><td>13</td></tr>
+</table>
+
+### TEST
+
+**Message Name:** TEST  
+**MsgID:** 255 dec / 0xff hex  
+**Description:** Communication test message, requires HW-Communication-Test-Sketch  
+**Requires Programming Mode:** n/a
+
+
+<table>
+    <tr><th>Byte no#</th><th>Description</th></tr> 
+    <tr><td>2</td><td>0x00 = to arduino: let ProgLED blink for 5sec<br/>
+	    		0x01 = from arduino: sent every time prog-button is pressed<br/>
+	    		0x02 = to arduino: PING request<br/>
+	    		0x03 = from arduino: PONG response</td></tr>
+    <tr><td>3</td><td align="center" rowspan="11">0x00</td></tr>
     <tr><td>4</td></tr>
     <tr><td>5</td></tr>
     <tr><td>6</td></tr>
