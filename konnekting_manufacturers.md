@@ -113,7 +113,7 @@ _The following list shows the known/registered manufacturers (not devices!)_
     <td>Simon Golpe</td>
     <td>KNX User Forum</td>
     <td>simongolpevarela[a]hotmail.de</td>
-    <td>10.01.2017</td>
+    <td>30.10.2017</td>
   </tr>
   
   <!-- ### 3333 ### --->
