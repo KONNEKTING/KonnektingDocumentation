@@ -116,6 +116,16 @@ _The following list shows the known/registered manufacturers (not devices!)_
     <td>30.10.2017</td>
   </tr>
   
+  <!-- ### 263 ### --->
+  <tr>
+    <td>263</td>
+    <td>0107</td>
+    <td>Peterich</td>
+    <td>KNX User Forum</td>
+    <td>tomypter89[a]gmail.com</td>
+    <td>05.01.2018</td>
+  </tr>   
+  
   <!-- ### 3333 ### --->
   <tr>
     <td>3333</td>
