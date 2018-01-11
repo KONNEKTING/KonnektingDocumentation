@@ -186,6 +186,16 @@ _The following list shows the known/registered manufacturers (not devices!)_
     <td>15.02.2016</td>
   </tr>
   
+  <!-- ### 51966 ### --->
+  <tr>
+    <td>51966</td>
+    <td>CAFE</td>
+    <td>E. Hermanns / emax</td>
+    <td>KNX User Forum</td>
+    <td>emax[a]hermanns.net</td>
+    <td>15.02.2016</td>
+  </tr>
+  
   <!-- ### 57005 ### --->
   <tr>
     <td>57005</td>
