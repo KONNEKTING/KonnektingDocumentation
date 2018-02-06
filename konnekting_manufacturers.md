@@ -126,6 +126,16 @@ _The following list shows the known/registered manufacturers (not devices!)_
     <td>05.01.2018</td>
   </tr>   
   
+  <!-- ### 1908 ### --->
+  <tr>
+    <td>1908</td>
+    <td>0774</td>
+    <td>Eden Devices</td>
+    <td>KNX Special Sensors</td>
+    <td>technobucks[a]gmail.com</td><!-- vivian mascarinhas / vivian [a] computerworld.ae -->
+    <td>06.02.2018</td>
+  </tr>
+  
   <!-- ### 3333 ### --->
   <tr>
     <td>3333</td>
