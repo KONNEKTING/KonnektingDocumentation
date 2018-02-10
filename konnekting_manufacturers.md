@@ -125,6 +125,16 @@ _The following list shows the known/registered manufacturers (not devices!)_
     <td>tomypter89[a]gmail.com</td>
     <td>05.01.2018</td>
   </tr>   
+
+  <!-- ### 264 ### --->
+  <tr>
+    <td>264</td>
+    <td>0108</td>
+    <td>Sonnengruesser</td>
+    <td>KNX User Forum</td>
+    <td>ah-angst[a]gmx.at</td>
+    <td>10.02.2018</td>
+  </tr>   
   
   <!-- ### 1908 ### --->
   <tr>
