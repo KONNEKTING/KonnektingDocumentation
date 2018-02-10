@@ -176,6 +176,16 @@ _The following list shows the known/registered manufacturers (not devices!)_
     <td>12.02.2016</td>
   </tr>    
   
+  <!-- ### 29495 ### --->
+  <tr>
+    <td>29495</td>
+    <td>7337</td>
+    <td>SirSydom</td>
+    <td>KNX User Forum</td>
+    <td>com[a]sirsydom.de</td>
+    <td>10.02.2018</td>
+  </tr>     
+  
   <!-- ### 43981 ### --->
   <tr>
     <td>43981</td>
