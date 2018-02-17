@@ -121,6 +121,7 @@ If you haven't registered a manufacturer-id yet, NOW would be the best time for 
                             a 16-bit type needs four hex-characters: 00FF
                             a 32-bit type needs eight hex-characters: 000000FF
                             a 11-byte-string: 666F6F2062617200000000 ("foo bar")
+                            Negative values have to be defined using the two's complement.
                             This attribute is MANDATORY.
 
                         Optional:
