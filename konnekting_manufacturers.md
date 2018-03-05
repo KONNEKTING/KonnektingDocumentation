@@ -146,6 +146,16 @@ _The following list shows the known/registered manufacturers (not devices!)_
     <td>06.02.2018</td>
   </tr>
   
+  <!-- ### 2069 ### --->
+  <tr>
+    <td>2069</td>
+    <td>0815</td>
+    <td>Jens Höppner</td>
+    <td>KNX User Forum</td><!-- github: jentz1986 -->
+    <td>mail[a]jens-hoeppner.de</td>
+    <td>05.03.2018</td>
+  </tr>     
+  
   <!-- ### 3333 ### --->
   <tr>
     <td>3333</td>
